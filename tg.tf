@@ -2,7 +2,7 @@ resource "aws_alb_target_group" "test" {
   name     = "alb-tg"
   port     = 80
   protocol = "HTTP"
-  vpc_id   = "vpc-041b1db3d1f6cdd8a"
+  vpc_id   = "vpc-016a6492a5f3c5520"
 }
 
 resource "aws_alb_listener" "test" {

@@ -5,7 +5,7 @@ resource "aws_autoscaling_group" "asg-1" {
   health_check_grace_period = 300
   health_check_type         = "ELB"
   desired_capacity          = 1
-  vpc_zone_identifier = ["subnet-0dd5c46ade5755d4c","subnet-059fe0bcccf938020"]
+  vpc_zone_identifier = ["subnet-095dddd3ae1f8851f","subnet-061487ed4c609d81c"]
   tag {
     key                 = "Name"
     value               = "asg-lt"

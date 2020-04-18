@@ -8,10 +8,10 @@ resource "aws_launch_template" "test" {
   name          = "lt1"
   image_id      = "ami-07ebfd5b3428b6f4d"
   instance_type = "t2.micro"
-  vpc_security_group_ids = ["sg-091741c2ff0d8625c"]
+  vpc_security_group_ids = ["sg-0f619344375c910f2"]
   key_name = "${aws_key_pair.my1key.key_name}"
 
-#  user_data = "${file("script.sh")}"
+  user_data = "${base64encode("${file("script.sh")}")}"
 
 connection {
     user = "ubuntu"

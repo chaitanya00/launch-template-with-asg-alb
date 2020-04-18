@@ -1,7 +1,7 @@
 resource "aws_route53_zone" "test" {
   name         = "charu.com."
   vpc {
-    vpc_id = "vpc-041b1db3d1f6cdd8a"
+    vpc_id = "vpc-016a6492a5f3c5520"
   }
   lifecycle {
     ignore_changes = ["vpc"]
